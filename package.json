@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "gh-pages ."
+    "deploy": "gh-pages ."
   },
   "keywords": [],
   "author": "",
