@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="./../static/css/materialize.min.css" media="screen,projection" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Python | TechSLIDER</title>
+
+</head>
+
+<body>
+
+    <!-- Responsive Navbar -->
+    <div class="navbar-fixed">
+        <nav class="green">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="../index.html" class="brand-logo">TechSLIDER</a>
+                    <a href="#" id="hammenu" data-target="slide-out" class="sidenav-trigger show-on-large right"><i
+                            class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="slide-out">
+        <li><a href="./python.html"><strong>Python</strong></a></li>
+        <li><a href="./javascript.html"><strong>JavaScript</strong></a></li>
+        <li><a href="../about.html"><strong>About</strong></a></li>
+    </ul>
+    <!-- Responsive Navbar -->
+
+
+    <!-- Footer -->
+    <footer class="page-footer grey darken-4" style="padding-bottom: 20px;">
+        <div class="container center-align">
+            <a href="./../index.html" class="brand-logo">TechSLIDER</a>
+            &copy; 2018 Copyright
+        </div>
+    </footer>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="./../static/js/jquery.js"></script>
+    <script type="text/javascript" src="./../static/js/materialize.min.js"></script>
+
+    <script>
+        // Hamburger Menu Toggeling
+        $(document).ready(function () {
+            $('.sidenav').sidenav({
+                edge: 'right',
+                draggable: true,
+                closeOnClick: true
+            });
+        });
+        // Hamburger Menu Toggeling
+    </script>
+
+</body>
+
+</html>
