@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="./static/css/materialize.min.css" media="screen,projection" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About | TechSLIDER</title>
+
+    <style>
+        .hero{
+            background-color: #F5F6FA;
+            margin-top: 20px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 5px 10px 28px #4285F4;
+        }
+
+        .navbar{
+                background-color: #4285F4;
+            }
+        </style>
+</head>
+
+<body>
+
+    <!-- Responsive Navbar -->
+    <div class="navbar-fixed">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo">TechSLIDER</a>
+                    <a href="#" id="hammenu" data-target="slide-out" class="sidenav-trigger show-on-large right"><i
+                            class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="slide-out">
+        <!-- -->
+        <ul class="collection">
+            <li class="collection-item avatar">
+                <a href="./presentation/python.html">
+                    <img src="./static/svg/python.svg" alt="" class="circle">
+                    <span class="title">Python</span>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <a href="./presentation/javascript.html">
+                    <img src="./static/svg/js.svg" alt="" class="circle">
+                    <span class="title">JavaScript</span>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <a href="about.html">
+                    <img src="./static/svg/info.svg" alt="" class="circle">
+                    <span class="title">About</span>
+                </a>
+            </li>
+        </ul>
+    </ul>
+    <!-- -->
+
+    <!-- Responsive Navbar -->
+
+
+    <div class="container hero">
+        <h4 class="center-align"> - Our Mission - </h4>
+        <br>
+        <p class="container center-align">To provide the most effective presentation on web.</p>
+        <br><br>
+        <h4 class="center-align"> About </h4>
+        <br>
+        <p class="container center-align">
+            At TechSLIDER, we provide most simplistic and effective web presentation about Tech and Programming.
+            Whoever looking for minimal and simplified version of perticular's explanation and flow of working
+            paradigm, this is the right platform considerable.
+        </p>
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="./static/js/jquery.js"></script>
+    <script type="text/javascript" src="./static/js/materialize.min.js"></script>
+
+    <script>
+        // Hamburger Menu Toggeling
+        $(document).ready(function () {
+            $('.sidenav').sidenav({
+                edge: 'right',
+                draggable: true,
+                closeOnClick: true
+            });
+        });
+        // Hamburger Menu Toggeling
+    </script>
+
+</body>
+
+</html>
