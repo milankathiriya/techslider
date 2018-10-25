@@ -1,0 +1,16 @@
+{
+  "name": "techslide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "gh-pages ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://milankathiriya.github.io/techslider",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
