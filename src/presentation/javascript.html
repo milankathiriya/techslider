@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="./../static/css/materialize.min.css" media="screen,projection" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript | TechSLIDER</title>
+
+    <style>
+        .hero-red{
+                background-color: #F5F6FA;
+                margin-top: 15rem;
+                margin-bottom: 15rem;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                border-radius: 10px;
+                box-shadow: 5px 10px 28px darkgoldenrod;
+            }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Responsive Navbar -->
+    <div class="navbar-fixed">
+        <nav class="yellow darken-1">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="../index.html" class="brand-logo black-text">TechSLIDER</a>
+                    <a href="#" id="hammenu" data-target="slide-out" class="sidenav-trigger show-on-large right"><i
+                            class="material-icons black-text">menu</i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="slide-out">
+        <!-- -->
+        <ul class="collection">
+            <li class="collection-item avatar">
+                <a href="python.html">
+                    <img src="../static/svg/python.svg" alt="" class="circle">
+                    <span class="title">Python</span>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <a href="javascript.html">
+                    <img src="../static/svg/js.svg" alt="" class="circle">
+                    <span class="title">JavaScript</span>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <a href="../about.html">
+                    <img src="../static/svg/info.svg" alt="" class="circle">
+                    <span class="title">About</span>
+                </a>
+            </li>
+        </ul>
+    </ul>
+    <!-- Responsive Navbar -->
+
+
+    <div class="container">
+        <div class="container hero-red">
+            <h6 class="center-align"> <i class="medium material-icons"> access_time</i>
+                <br><br>
+                Coming Soon... </h6>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="page-footer grey darken-4" style="padding-bottom: 20px;">
+        <div class="container center-align">
+            <a href="../index.html" class="brand-logo">TechSLIDER</a>
+            &copy; 2018 Copyright
+        </div>
+    </footer>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="./../static/js/jquery.js"></script>
+    <script type="text/javascript" src="./../static/js/materialize.min.js"></script>
+
+    <script>
+        // Hamburger Menu Toggeling
+        $(document).ready(function () {
+            $('.sidenav').sidenav({
+                edge: 'right',
+                draggable: true,
+                closeOnClick: true
+            });
+        });
+        // Hamburger Menu Toggeling
+    </script>
+
+</body>
+
+</html>
