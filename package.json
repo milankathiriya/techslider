@@ -12,6 +12,7 @@
   "homepage": "https://milankathiriya.github.io/techslider",
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "jump.js": "^1.0.2",
     "sal.js": "^0.5.0"
   }
 }
