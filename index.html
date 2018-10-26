@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link type="text/css" rel="stylesheet" href="./static/css/materialize.min.css" media="screen,projection" />
-
+    <link rel="stylesheet" href="./static/css/sal.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TechSLIDER | Online Web Presentation</title>
@@ -79,7 +79,7 @@
 
 
     <!-- Main Landing Section -->
-    <div class="container hero">
+    <div class="container hero" data-sal="zoom-in" data-sal-duration="450" data-sal-easing="ease-out-bounce">
         <h4 class="center-align">An online web presentation platform.</h4>
         <br>
         <p class="container center-align">TechSLIDER is technical & programming related web-based slideshow
@@ -103,7 +103,7 @@
     <div class="container">
         <!-- Who can use section -->
         <div class="row">
-            <div class="col s12 center-align">
+            <div class="col s12 center-align" data-sal="zoom-in" data-sal-duration="450" data-sal-easing="ease-out-bounce">
                 <h4>Who can use?</h4>
                 <p>Followings are we can think of, but of course creative peoples surely catch this up.</p>
             </div>
@@ -111,7 +111,7 @@
 
         <br><br>
         <div class="row">
-            <div class="col s12 m4 l4">
+            <div class="col s12 m4 l4" data-sal="slide-right" data-sal-duration="450" data-sal-easing="ease-out-bounce">
                 <div class="row center-align"><img src="./static/svg/Developer.svg" class="responsive-img" width="250"
                         height="100"></div>
                 <div class="row center-align">
@@ -119,7 +119,7 @@
                 </div>
             </div>
 
-            <div class="col s12 m4 l4">
+            <div class="col s12 m4 l4" data-sal="slide-down" data-sal-duration="450" data-sal-easing="ease-out-bounce">
                 <div class="row center-align"><img src="./static/svg/Multi_Monitor.svg" class="responsive-img" width="250"
                         height="100"></div>
                 <div class="row center-align">
@@ -127,7 +127,7 @@
                 </div>
             </div>
 
-            <div class="col s12 m4 l4">
+            <div class="col s12 m4 l4" data-sal="slide-left" data-sal-duration="450" data-sal-easing="ease-out-bounce">
                 <div class="row center-align"><img src="./static/svg/Programmer_02.svg" class="responsive-img" width="250"
                         height="100"></div>
                 <div class="row center-align">
@@ -145,11 +145,11 @@
         <br>
 
         <div class="row valign-wrapper">
-            <div class="col s12 m6 l6">
+            <div class="col s12 m6 l6" data-sal="slide-right" data-sal-duration="450" data-sal-easing="ease-out-bounce">
                 <h5>Easy to demonstrate what and how you want!</h5>
             </div>
-            <div class="col s12 m6 l6 right-align"><img src="./static/svg/Presentation_OnBoard.svg" class="responsive-img"
-                    width="350" height="250"></div>
+            <div class="col s12 m6 l6 right-align" data-sal="slide-left" data-sal-duration="450" data-sal-easing="ease-out-bounce"><img
+                    src="./static/svg/Presentation_OnBoard.svg" class="responsive-img" width="350" height="250"></div>
         </div>
 
         <br>
@@ -159,9 +159,9 @@
         <br>
 
         <div class="row valign-wrapper">
-            <div class="col s12 m6 l6 left-align"><img src="./static/svg/Presentation_Statistics.svg" class="responsive-img"
-                    width="350" height="250"></div>
-            <div class="col s12 m6 l6">
+            <div class="col s12 m6 l6 left-align" data-sal="slide-right" data-sal-duration="450" data-sal-easing="ease-out-bounce"><img
+                    src="./static/svg/Presentation_Statistics.svg" class="responsive-img" width="350" height="250"></div>
+            <div class="col s12 m6 l6" data-sal="slide-left" data-sal-duration="450" data-sal-easing="ease-out-bounce">
                 <h5>Understand in very fluent way as possible.</h5>
             </div>
         </div>
@@ -173,11 +173,11 @@
         <br>
 
         <div class="row valign-wrapper">
-            <div class="col s12 m6 l6">
+            <div class="col s12 m6 l6" data-sal="slide-right" data-sal-duration="450" data-sal-easing="ease-out-bounce">
                 <h5>Access in all your device beautifully.</h5>
             </div>
-            <div class="col s12 m6 l6 right-align"><img src="./static/svg/Responsive_Devices_02.svg" class="responsive-img"
-                    width="350" height="250"></div>
+            <div class="col s12 m6 l6 right-align" data-sal="slide-right" data-sal-duration="450" data-sal-easing="ease-out-bounce"><img
+                    src="./static/svg/Responsive_Devices_02.svg" class="responsive-img" width="350" height="250"></div>
         </div>
     </div>
     <!-- Grid contents -->
@@ -189,7 +189,7 @@
     <div class="getstarted">
         <br>
         <br>
-        <div class="container center-align">
+        <div class="container center-align" data-sal="zoom-in" data-sal-duration="450" data-sal-easing="ease-out-bounce">
             <div class="row">
                 <h4>Get Started</h4>
                 <p>Fire up your inner spirit and grab the stuff you waiting for!!!</p>
@@ -217,8 +217,17 @@
     <!-- Compiled and minified JavaScript -->
     <script src="./static/js/jquery.js"></script>
     <script type="text/javascript" src="./static/js/materialize.min.js"></script>
+    <script src="./static/js/sal.js"></script>
 
     <script>
+        sal({
+            threshold: 1,
+            once: false,
+        });
+
+        const scrollAnimations = sal();
+        scrollAnimations.enable();
+
         // Hamburger Menu Toggeling
         $(document).ready(function () {
             $('.sidenav').sidenav({

@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link type="text/css" rel="stylesheet" href="./static/css/materialize.min.css" media="screen,projection" />
-
+    <link rel="stylesheet" href="./static/css/sal.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About | TechSLIDER</title>
@@ -25,6 +25,7 @@
         .hero-red{
             background-color: #F5F6FA;
             margin-top: 40px;
+            margin-bottom: 40px;
             padding-top: 40px;
             padding-bottom: 40px;
             border-radius: 10px;
@@ -80,7 +81,7 @@
     <!-- Responsive Navbar -->
 
 
-    <div class="container hero">
+    <div class="container hero" data-sal="zoom-in" data-sal-duration="450" data-sal-easing="ease-out-bounce">
         <h4 class="center-align"> - Our Mission - </h4>
         <br>
         <p class="container center-align">To provide the most effective presentation on web.</p>
@@ -94,10 +95,10 @@
         </p>
     </div>
 
-    <div class="container">
+    <div class="container" data-sal="zoom-in" data-sal-duration="450" data-sal-easing="ease-out-bounce">
         <div class="container hero-red">
             <h6 class="center-align"> Made with <i class="tiny material-icons red-text">favorite</i>
-                in India. </h6>
+                in India.</h6>
         </div>
     </div>
 
@@ -105,8 +106,17 @@
     <!-- Compiled and minified JavaScript -->
     <script src="./static/js/jquery.js"></script>
     <script type="text/javascript" src="./static/js/materialize.min.js"></script>
+    <script src="./static/js/sal.js"></script>
 
     <script>
+        sal({
+            threshold: 1,
+            once: false,
+        });
+
+        const scrollAnimations = sal();
+        scrollAnimations.enable();
+
         // Hamburger Menu Toggeling
         $(document).ready(function () {
             $('.sidenav').sidenav({
