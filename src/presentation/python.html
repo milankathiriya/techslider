@@ -16,8 +16,8 @@
 
     <style>
         .main{
-            margin-top: 10em;
-            margin-bottom: 10em;
+            margin-top: 11em;
+            margin-bottom: 11em;
         }
 
         /* .card{
@@ -25,7 +25,7 @@
         } */
 
         #core-card-img{
-            width: 400px;
+            width: 500px;
             height: 300px
         }
     </style>
@@ -72,10 +72,8 @@
     </ul>
     <!-- Responsive Navbar -->
 
-
-
-
-    <div class="container main">
+    <!-- Core Advance Cards -->
+    <div class="container main center">
         <div class="row">
             <div class="col s12 m6 l6">
                 <div class="card hoverable">
@@ -83,11 +81,15 @@
                         <img id="core-card-img" class="activator responsive-img" src="../static/svg/Core.svg">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Core Python<i class="small material-icons right">keyboard_arrow_up</i></span>
+                        <span class="card-title activator grey-text text-darken-4"><strong>Core Python</strong><i class="small material-icons right">keyboard_arrow_up</i></span>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Core Python<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        <span class="card-title grey-text text-darken-4"><strong>Core Python</strong><i class="material-icons right">close</i></span>
+                        <br><br>
+                        <a class="btn-floating btn-large waves-effect waves-light teal pulse" href="../presentation/python/core_contents.html"><i
+                                class="material-icons">launch</i></a>
+                        <br><br>
+                        <h5>Quick start with Core Python.</h5>
                     </div>
                 </div>
             </div>
@@ -98,17 +100,21 @@
                     <img id="core-card-img" class="activator responsive-img" src="../static/svg/Advance.svg">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Advance Python<i class="small material-icons right">keyboard_arrow_up</i></span>
+                    <span class="card-title activator grey-text text-darken-4"><strong>Advance Python</strong><i class="small material-icons right">keyboard_arrow_up</i></span>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Advance Python<i class="material-icons right">close</i></span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    <span class="card-title grey-text text-darken-4"><strong>Advance Python</strong><i class="material-icons right">close</i></span>
+                    <br><br>
+                    <a class="btn-floating btn-large waves-effect waves-light teal pulse" href="../presentation/python/advance_contents.html"><i
+                            class="material-icons">launch</i></a>
+                    <br><br>
+                    <h5>Experience power of Python.</h5>
                 </div>
             </div>
         </div>
     </div>
     </div>
-
+    <!-- Core Advance Cards -->
 
     <!-- Footer -->
     <footer class="page-footer grey darken-4" style="padding-bottom: 20px;">
@@ -132,6 +138,7 @@
 
         const scrollAnimations = sal();
         scrollAnimations.enable();
+
         // Hamburger Menu Toggeling
         $(document).ready(function () {
             $('.sidenav').sidenav({
@@ -141,6 +148,10 @@
             });
         });
         // Hamburger Menu Toggeling
+
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
     </script>
 
 </body>
