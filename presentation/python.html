@@ -7,10 +7,28 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link type="text/css" rel="stylesheet" href="./../static/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="../static/css/sal.css">
+    <link rel="shortcut icon" href="../static/images/favicons/slideshow.png" type="image/x-icon">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Python | TechSLIDER</title>
+
+    <style>
+        .main{
+            margin-top: 10em;
+            margin-bottom: 10em;
+        }
+
+        /* .card{
+            width: 50vh;
+        } */
+
+        #core-card-img{
+            width: 400px;
+            height: 300px
+        }
+    </style>
 
 </head>
 
@@ -55,6 +73,43 @@
     <!-- Responsive Navbar -->
 
 
+
+
+    <div class="container main">
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <div class="card hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img id="core-card-img" class="activator responsive-img" src="../static/svg/Core.svg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Core Python<i class="small material-icons right">keyboard_arrow_up</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Core Python<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l6"">
+                <div class=" card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img id="core-card-img" class="activator responsive-img" src="../static/svg/Advance.svg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Advance Python<i class="small material-icons right">keyboard_arrow_up</i></span>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Advance Python<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
     <!-- Footer -->
     <footer class="page-footer grey darken-4" style="padding-bottom: 20px;">
         <div class="container center-align">
@@ -67,8 +122,16 @@
     <!-- Compiled and minified JavaScript -->
     <script src="./../static/js/jquery.js"></script>
     <script type="text/javascript" src="./../static/js/materialize.min.js"></script>
+    <script src="../static/js/sal.js"></script>
 
     <script>
+        sal({
+            threshold: 0.5,
+            once: false,
+        });
+
+        const scrollAnimations = sal();
+        scrollAnimations.enable();
         // Hamburger Menu Toggeling
         $(document).ready(function () {
             $('.sidenav').sidenav({
