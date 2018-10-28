@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="../../static/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="../../static/css/sal.css">
+    <link rel="shortcut icon" href="../../static/images/favicons/slideshow.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Advance Python | TechSLIDER</title>
+
+    <style>
+        .main{
+            margin-top: 11em;
+            margin-bottom: 11em;
+        }
+
+        #core-card-img{
+            width: 500px;
+            height: 300px
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Responsive Navbar -->
+    <div class="navbar-fixed">
+        <nav class="teal">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="../../index.html" class="brand-logo">TechSLIDER</a>
+                    <a href="#" id="hammenu" data-target="slide-out" class="sidenav-trigger show-on-large right"><i
+                            class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="slide-out">
+        <!-- -->
+        <ul class="collection">
+            <li class="collection-item avatar">
+                <a href="../python.html">
+                    <img src="../../static/svg/python.svg" alt="" class="circle">
+                    <span class="title">Python</span>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <a href="../javascript.html">
+                    <img src="../../static/svg/js.svg" alt="" class="circle">
+                    <span class="title">JavaScript</span>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <a href="../../about.html">
+                    <img src="../../static/svg/info.svg" alt="" class="circle">
+                    <span class="title">About</span>
+                </a>
+            </li>
+        </ul>
+    </ul>
+    <!-- Responsive Navbar -->
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer grey darken-4" style="padding-bottom: 20px;">
+        <div class="container center-align">
+            <a href="../../index.html" class="brand-logo">TechSLIDER</a>
+            &copy; 2018 Copyright
+        </div>
+    </footer>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="../../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../../static/js/materialize.min.js"></script>
+    <script src="../../static/js/sal.js"></script>
+
+    <script>
+        sal({
+            threshold: 0.5,
+            once: false,
+        });
+
+        const scrollAnimations = sal();
+        scrollAnimations.enable();
+
+        // Hamburger Menu Toggeling
+        $(document).ready(function () {
+            $('.sidenav').sidenav({
+                edge: 'right',
+                draggable: true,
+                closeOnClick: true
+            });
+        });
+        // Hamburger Menu Toggeling
+
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+    </script>
+
+</body>
+
+</html>
