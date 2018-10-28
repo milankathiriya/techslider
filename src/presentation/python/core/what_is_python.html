@@ -24,6 +24,7 @@
 
     <div class="reveal">
         <div class="slides">
+
             <section>What is Python?</section>
             <section>
                 <section>Python is a high level programming language.</section>
@@ -60,11 +61,14 @@
     <script src="../../../static/reveal/plugin/highlight/highlight.js"></script>
     <script src="../../../static/reveal/plugin/zoom-js/zoom.js"></script>
     <script src="../../../static/reveal/plugin/search/search.js"></script>
+    <script src="../../../static/reveal/plugin/notes/notes.js"></script>
+    <script src="../../../static/reveal/plugin/notes/notes.html"></script>
     <script>
         Reveal.initialize({
             //slideNumber: true,
             slideNumber: 'c/t',
-
+            hideAddressBar: true,
+            showNotes: true,
             mouseWheel: true,
             transition: 'slide', // none/fade/slide/convex/concave/zoom
         });
