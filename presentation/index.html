@@ -3,34 +3,70 @@
 
 <head>
     <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="../static/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="../static/css/sal.css">
+    <link rel="stylesheet" href="../static/reveal/css/reveal.css">
+    <link rel="stylesheet" href="../static/reveal/css/theme/white.css">
+    <link rel="shortcut icon" href="../static/images/favicons/slideshow.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TechSlider</title>
+    <title>Sample | TechSLIDER</title>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&subset=latin-ext"
-        rel="stylesheet" />
-    <!-- CSS Base -->
-    <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css" />
-    <!-- CSS SVG Icons (Font Awesome) -->
-    <link rel="stylesheet" type='text/css' media='all' href="../static/css/svg-icons.css" />
-    <link rel="shortcut icon" href="../static/images/favicons/slideshow.png" type="image/x-icon">
-
+    <style>
+    </style>
 
 </head>
 
 <body>
 
-    <!-- PUT WEBSLIDES PRESENTATION CONTENT HERE -->
+    <div class="reveal">
+        <div class="slides">
 
-    <script src="../static/js/webslides.js"></script>
+            <section>Hello</section>
+            <section>Single Horizontal Slide</section>
+            <section>
+                <section>Vertical Slide 1</section>
+                <section>Vertical Slide 2</section>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                        ## Page title
+                
+                        A paragraph with some text and a [link](http://hakim.se).
+                    </textarea>
+            </section>
+        </div>
+    </div>
 
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/materialize.min.js"></script>
+    <script src="../static/js/sal.js"></script>
+    <script src="../static/reveal/js/reveal.js"></script>
+    <script src="../static/reveal/plugin/markdown/marked.js"></script>
+    <script src="../static/reveal/plugin/markdown/markdown.js"></script>
+    <script src="../static/reveal/plugin/highlight/highlight.js"></script>
+    <script src="../static/reveal/plugin/zoom-js/zoom.js"></script>
+    <script src="../static/reveal/plugin/search/search.js"></script>
+    <script src="../static/reveal/plugin/notes/notes.js"></script>
+    <script src="../static/reveal/plugin/notes/notes.html"></script>
     <script>
-        window.ws = new WebSlides();
+        Reveal.initialize({
+            //slideNumber: true,
+            slideNumber: 'c/t',
+            hideAddressBar: true,
+            showNotes: true,
+            mouseWheel: true,
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+        });
+        /*Reveal.configure({
+            autoSlide: 5000
+        });*/
     </script>
-
-    <!-- svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
-    <script defer src="../static/js/svg-icons.js"></script>
 
 </body>
 
