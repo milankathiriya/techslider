@@ -24,29 +24,65 @@
 
     <div class="reveal">
         <div class="slides">
-
             <section>What is Python?</section>
+
             <section>
                 <section>Python is a high level programming language.</section>
                 <section>Python is general purpose language.</section>
             </section>
-            <section>Single Horizontal Slide</section>
+
+            <section>Who uses Python?
+                <p class="fragment">Software Engineers</p>
+                <p class="fragment">Data Analysts</p>
+                <p class="fragment">Mathematicians</p>
+                <p class="fragment">Scientists</p>
+                <p class="fragment">Accountants</p>
+            </section>
+
+            <section>What special about Python?
+                <p class="fragment">Less lines of code &nbsp; => &nbsp; Solve complex Problems</p>
+            </section>
+
+            <section>Multi-Purpose language</section>
+
             <section>
-                <section>Vertical Slide 1</section>
-                <section>Vertical Slide 2</section>
+                <div class="row">
+                    <div class="col s6 m6 l6 xl6 card-panel hoverable">Data Analysis</div>
+                    <div class="col s6 m6 l6 xl6 card-panel hoverable">AI / ML</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col s6 m6 l6 xl6 card-panel hoverable">Web Apps</div>
+                    <div class="col s6 m6 l6 xl6 card-panel hoverable">Desktop Apps</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col s6 m6 l6 xl6 card-panel hoverable">Mobile Apps</div>
+                    <div class="col s6 m6 l6 xl6 card-panel hoverable">Games</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col s6 m6 l6 xl6 card-panel hoverable">Testing / Automation</div>
+                    <div class="col s6 m6 l6 xl6 card-panel hoverable">Hacking</div>
+                </div>
             </section>
-            <section data-markdown>
-                <textarea data-template>
-                        ## Page title
-                
-                        A paragraph with some text and a [link](http://hakim.se).
-                    </textarea>
-            </section>
+
+            <section>Features</section>
+
             <section>
-                <p class="fragment" data-fragment-index="3">Appears last</p>
-                <p class="fragment" data-fragment-index="1">Appears first</p>
-                <p class="fragment" data-fragment-index="2">Appears second</p>
+                <div class="row">
+                    <p class="fragment col s5 m5 l5 xl5 card-panel pink-text hoverable">Human Friendly</p>
+                    <p class="fragment col s5 m5 l5 x5 offset-s2 offset-m2 offset-l2 offset-xl2 card-panel red-text hoverable">Cross
+                        Platform</p>
+                </div>
+                <br>
+                <div class="row">
+                    <p class="fragment col s5 m5 l5 xl5 card-panel blue-text hoverable">Huge Community</p>
+                    <p class="fragment zoom-layer col s5 m5 l5 x5 offset-s2 offset-m2 offset-l2 offset-xl2 card-panel purple-text hoverable">Large
+                        Ecosystem</p>
+                </div>
             </section>
+
         </div>
     </div>
 
@@ -68,13 +104,17 @@
             //slideNumber: true,
             slideNumber: 'c/t',
             hideAddressBar: true,
+            controlsTutorial: true,
             showNotes: true,
             mouseWheel: true,
             transition: 'slide', // none/fade/slide/convex/concave/zoom
         });
-        Reveal.configure({
+        Reveal.toggleHelp(false);
+
+
+        /*Reveal.configure({
             autoSlide: 5000
-        });
+        });*/
     </script>
 
 </body>
