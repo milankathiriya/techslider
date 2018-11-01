@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d src"
+    "deploy": "gh-pages -d src",
+    "go": "git add . && git commit -m 'updated' && git push -u origin master && npm run deploy"
   },
   "keywords": [],
   "author": "",
